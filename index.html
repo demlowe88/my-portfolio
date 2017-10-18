@@ -49,12 +49,12 @@
   			background-position: center;
   			background-size: cover;
   			background-repeat: repeat-y;
-  			text-align: left;
   			height: 100%;
   			position: relative;
   			margin: 0 auto;
   			max-width: 100%;
         padding-top: 70px;
+        padding-bottom: 10%;
 		}
 
 		h1 {
@@ -92,6 +92,7 @@
 		  font-size: 24px;
 		  text-align: center;
 		  height: 100%;
+      margin-bottom: 30px;
 		}
 
 		ul {
@@ -105,7 +106,7 @@
 		  text-align: left;
 		  color: #a8a8a8;
 		  font-size: 20px;
-		  padding: 0 15px 0 15px;
+		  padding: 0 10px 0 1px;
 
 		  list-style-type: none;
 		}
@@ -122,7 +123,8 @@
 
 		a {
   			text-decoration: none;
-              background: white;
+        background: white;
+        padding: 0 10px;
   		}
 
 		a:link {
@@ -133,6 +135,10 @@
 		  color: #abddd8;
 		}
 
+    .navbar-nav > li > a {
+      padding: 10px;
+    }  
+
     body > nav > div > div > div.navbar-header > a {
       background: none;
     }
@@ -141,17 +147,38 @@
       color: #abddd8;
     }
 
-    body > div:nth-child(4) > div:nth-child(3) > ul > li:nth-child(1) > a {
+    .top-space {
+      margin-top: 50px;
+    }
+
+    body > div:nth-child(4) > div > div:nth-child(3) > div > ul > li:nth-child(1) > a {
       color: #a8a8a8;
     }
 
-    body > div:nth-child(4) > div:nth-child(3) > ul > li:nth-child(3) > a {
+    body > div:nth-child(4) > div > div:nth-child(3) > div > ul > li:nth-child(2) > a {
+      color: #a8a8a8;
+    }
+
+    body > div:nth-child(4) > div > div:nth-child(3) > div > ul > li:nth-child(3) > a {
+      color: #a8a8a8;
+    }
+
+    body > div:nth-child(5) > div > div.row > div > ul > li:nth-child(1) > a {
+      color: #a8a8a8;
+    }
+
+    body > div:nth-child(5) > div > div.row > div > ul > li:nth-child(2) > a {
       color: #a8a8a8;
     }
 
 		i {
 		  color: #abddd8;
 		}
+
+    body > div:nth-child(4) > div > div:nth-child(2) > div {
+      padding-bottom: 5%;
+      padding-left: 3%;
+    }
 
   	</style>
 </head>
@@ -174,13 +201,13 @@
               <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i>HOME</a>
             </li>
             <li>     
-              <a href="#"><i class="fa fa-user" aria-hidden="true"></i>ABOUT</a>
+              <a href="#about"><i class="fa fa-user" aria-hidden="true"></i>ABOUT</a>
             </li>           
             <li>
-              <a href="#"><i class="fa fa-folder-open" aria-hidden="true"></i>PROJECTS</a>
+              <a href="#projects"><i class="fa fa-folder-open" aria-hidden="true"></i>PROJECTS</a>
             </li>
             <li>
-              <a href="#"><i class="fa fa-phone-square" aria-hidden="true"></i>CONTACT</a>
+              <a href="#contact"><i class="fa fa-phone-square" aria-hidden="true"></i>CONTACT</a>
             </li>            
             </ul>
         </div>
@@ -198,6 +225,7 @@
       </div>
   	</div>
   </div>
+  <div class="container" id="about">
   <div class="row">
   	<div class="col-md-6">
     <h3 id="about">About Me</h3>
@@ -206,6 +234,8 @@
       </p>
     </div>
   </div>
+</div>
+<div class="container top-space" id="projects">
   <div class="row">
 	<div class="col-md-6">
 	  <h3 id="projects">Projects</h3>
@@ -213,20 +243,26 @@
         <b>A collection of things I've put together. There's art to admire, beats to jam to, and web projects in various states of completion.</b>
       </p>
 	</div>
+  <div class="row">
     <div class="col-md-12">
       <img src="https://res.cloudinary.com/demlowe88/image/upload/v1489077961/placeholder_ieqmie.png" alt="placeholder" width="120" height="120">
       <img src="https://res.cloudinary.com/demlowe88/image/upload/v1489077961/placeholder_ieqmie.png" alt="placeholder" width="120" height="120">
       <img src="https://res.cloudinary.com/demlowe88/image/upload/v1489077961/placeholder_ieqmie.png" alt="placeholder" width="120" height="120">
       <img src="https://res.cloudinary.com/demlowe88/image/upload/v1489077961/placeholder_ieqmie.png" alt="placeholder" width="120" height="120">
     </div>
+  </div>
+    <div class="row">
     <div class="col-md-12">
       <ul>
         <li><a href="https://imgur.com/a/PpXP5" target="_blank"><i class="fa fa-picture-o" aria-hidden="true"></i> ART   </a></li>
-        <li><a href="https://drive.google.com/drive/folders/0BzfpDMreH0iBU0ZZNVhRLS00bEk?usp=sharing" target="_blank"><i class="fa fa-music" aria-hidden="true"></i> BEATS   </a></li>
+        <li><a href="https://soundcloud.com/demicah-lowe" target="_blank"><i class="fa fa-music" aria-hidden="true"></i> BEATS   </a></li>
         <li><a href="https://codepen.io/demlowe88/" target="_blank"><i class="fa fa-codepen" aria-hidden="true"></i> WEB   </a></li>
       </ul>
     </div>
   </div>
+  </div>
+</div>
+  <div class="container top-space" id="contact">
   <div class="row">
     <div class="col-md-6">
       <h3 id="contact">Contact</h3>
@@ -234,13 +270,16 @@
           <b>I can admittedly be a bit of a hermit since I prefer to do most my doodling, designing, and beat-making at la casa. That being said, I most certainly exist on the interwebs and you're more than welcome to shoot me line.</b>
         </p>
       </div>
+      <div class="row">
       <div class="col-md-12">
         <ul>
-          <li><i class="fa fa-facebook-official" aria-hidden="true"></i><a href="https://www.facebook.com/demicah.lowe" target="_blank">FACEBOOK</a></li>
-          <li><i class="fa fa-linkedin-square" aria-hidden="true"></i><a href="https://www.linkedin.com/in/demicah-lowe-173739130?trk=nav_responsive_tab_profile" target="_blank">LINKEDIN</a></li>
+          <li><a href="https://www.facebook.com/demicah.lowe" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i> FACEBOOK</a></li>
+          <li><a href="https://www.linkedin.com/in/demicah-lowe-173739130?trk=nav_responsive_tab_profile" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i> LINKEDIN</a></li>
         </ul>  	
       </div>	
     </div>
+    </div>
+  </div>
     <div>
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -250,5 +289,3 @@
     </footer>  	
 </body>
 </html>
-
-
